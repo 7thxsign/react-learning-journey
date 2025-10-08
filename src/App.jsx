@@ -4,7 +4,7 @@ import Search from './components/Search.jsx';
 
 const App = () => {
 
-  const [searchTerm, setSearchTerm] = useState('I AM BATMAN');
+  const [searchTerm, setSearchTerm] = useState('');
 
   return (
     <main>
@@ -17,6 +17,7 @@ const App = () => {
         </header>
 
         <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+        <h1 className='text-center text-white'>{searchTerm}</h1>
       </div>
     </main>
   )
